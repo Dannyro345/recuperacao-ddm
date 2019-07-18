@@ -44,7 +44,7 @@ export class ListPage implements OnInit {
 
   remove(avaliacao) {
     this.loadingController.create({
-      message: "Removido com sucesso !"
+      message: "Avaliação removida com sucesso !"
     }).then((loader) => {
       loader.present()
       this.avaliacaoService.delete(avaliacao.id).subscribe(

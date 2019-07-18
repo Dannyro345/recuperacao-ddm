@@ -10,16 +10,24 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 
 // Modal
-import {AvaliacaoModalPageModule} from './avaliacao-modal/avaliacao-modal.module';
+import { AvaliacaoModalPageModule } from './avaliacao-modal/avaliacao-modal.module';
+import {AvaliacaoPageModule} from './avaliacao/avaliacao.module';
+
+// Storage
+import { IonicStorageModule } from '@ionic/storage';
+
+
 
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],
   imports: [BrowserModule,
     IonicModule.forRoot(),
-    AppRoutingModule, 
-    AvaliacaoModalPageModule],
-   
+    AppRoutingModule,
+    AvaliacaoModalPageModule,
+    IonicStorageModule.forRoot(),
+    AvaliacaoPageModule],
+
   providers: [
     StatusBar,
     SplashScreen,

@@ -16,7 +16,8 @@ import {AvaliacaoPageModule} from './avaliacao/avaliacao.module';
 // Storage
 import { IonicStorageModule } from '@ionic/storage';
 
-
+// Http
+import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [AppComponent],
@@ -26,7 +27,8 @@ import { IonicStorageModule } from '@ionic/storage';
     AppRoutingModule,
     AvaliacaoModalPageModule,
     IonicStorageModule.forRoot(),
-    AvaliacaoPageModule],
+    AvaliacaoPageModule,
+    HttpClientModule,],
 
   providers: [
     StatusBar,

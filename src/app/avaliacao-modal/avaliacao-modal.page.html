@@ -1,0 +1,46 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Avaliacão</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+
+    <ion-card-header>
+      Inserindo Avaliacão
+    </ion-card-header>
+
+    <ion-card-content>
+
+      <ion-item>
+        <ion-label> Nome: </ion-label>
+        <ion-input [(ngModel)]="avaliacao.avaliacao"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label> ID: </ion-label>
+        <ion-input [(ngModel)]="avaliacao.id"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label> Disciplina: </ion-label>
+        <ion-input [(ngModel)]="avaliacao.disciplina"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label> Data: </ion-label>
+        <ion-input [(ngModel)]="avaliacao.data"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label> Nota: </ion-label>
+        <ion-input [(ngModel)]="avaliacao.nota"></ion-input>
+      </ion-item>
+
+      <ion-button expand="full" (click)="add()">Ok</ion-button>
+
+    </ion-card-content>
+
+  </ion-card>
+</ion-content>

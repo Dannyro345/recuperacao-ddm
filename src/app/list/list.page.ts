@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { AvaliacaoModalPage } from '../avaliacao-modal/avaliacao-modal.page';
+
+
 
 @Component({
   selector: 'app-list',
@@ -7,9 +10,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ListPage implements OnInit {
 
+  avaliacoes;
+
   constructor() { }
 
   ngOnInit() {
   }
-
 }

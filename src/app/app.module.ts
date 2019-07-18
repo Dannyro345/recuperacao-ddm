@@ -10,14 +10,20 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 
 // Modal
-import { AvaliacaoModalPageModule } from './avaliacao-modal/avaliacao-modal.module';
+import {AvaliacaoModalPageModule } from './avaliacao-modal/avaliacao-modal.module';
 import {AvaliacaoPageModule} from './avaliacao/avaliacao.module';
+
+// List
+import {ListPageModule} from './list/list.module';
 
 // Storage
 import { IonicStorageModule } from '@ionic/storage';
 
 // Http
 import {HttpClientModule} from '@angular/common/http';
+
+// Camera
+import {Camera} from '@ionic-native/camera/ngx';
 
 @NgModule({
   declarations: [AppComponent],
@@ -28,11 +34,13 @@ import {HttpClientModule} from '@angular/common/http';
     AvaliacaoModalPageModule,
     IonicStorageModule.forRoot(),
     AvaliacaoPageModule,
-    HttpClientModule,],
+    HttpClientModule,
+    ListPageModule],
 
   providers: [
     StatusBar,
     SplashScreen,
+    Camera,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
   ],
   bootstrap: [AppComponent]
